@@ -2,13 +2,12 @@
 #itemImageSlider {
   /** 計算式の説明
   * -45px = ショップ名の高さ
-  * 60px = ナビゲーションの高さ
   * 15px = 余白
   * 100vw * 240 / 750 = ショップバナー1個のサイズ
   * 100vw * 120 / 616 = 楽天が用意したバナー1個のサイズ
   */
   margin-top: calc(
-    -45px + 60px + 15px
+    -45px + 15px
     + 100vw * 240 / 750
     + 100vw * 120 / 616
     );
@@ -21,7 +20,7 @@ iframe.sp-header {
     + 100vw * 120 / 616
   );
   position: absolute;
-  top: calc(150px + 60px);
+  top: calc(150px);
   left: 0;
   width: 100%;
 }
