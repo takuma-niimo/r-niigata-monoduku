@@ -1,5 +1,42 @@
-@import url(../../theme/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css);
+/* 商品画像スライダーの上隙間を作る */
+#itemImageSlider {
+  /** 計算式の説明
+  * -45px = ショップ名の高さ
+  * 60px = ナビゲーションの高さ
+  * 15px = 余白
+  * 100vw * 240 / 750 = ショップバナー1個のサイズ
+  * 100vw * 120 / 616 = 楽天が用意したバナー1個のサイズ
+  */
+  margin-top: calc(
+    -45px + 60px + 15px
+    + 100vw * 240 / 750
+    + 100vw * 120 / 616
+    );
+}
 
-body {
+/* 作った隙間に iframe を差し込む */
+iframe.sp-header {
+  height: calc(
+    100vw * 240 / 750
+    + 100vw * 120 / 616
+  );
+  position: absolute;
+  top: calc(150px + 60px);
+  left: 0;
+  width: 100%;
+}
 
+/* SP商品ページ共通パーツ */
+body.sp-header {
+  margin: 0;
+}
+
+.sp-header img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#shopCommonText>div {
+  margin: 0;
 }
