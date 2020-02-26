@@ -2,11 +2,6 @@
     /* outline: 1px dashed green; */
 }
 
-.content-wrap img, footer img {
-  width: 100%;
-  height: auto;
-}
-
 h2 {
   font-size: 26px;
 }
@@ -17,61 +12,78 @@ h2 {
   }
 }
 
-.content-wrap {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-#category-menu, .category-banner,
 #whats-niimo, #shopping-flow {
   margin: 60px auto;
 }
 
 /* -------------------------------------
-category-menu
+fixed background image
 ------------------------------------- */
-#category-menu .item {
+body {
   position: relative;
-  line-height: 46px;
-  border: 1px solid green;
-  margin-top: -1px;
+  width: 100%;
+  z-index: 0;
 }
 
-#category-menu h2 {
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  /* 70px = header height */
+  top: 70px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: url(../img/sp/water.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+@media (min-width: 768px) {
+  body::before {
+    top: 0;
+    height: 100vh;
+  }
+}
+
+/* -------------------------------------
+.catchcopy
+------------------------------------- */
+.catchcopy h2 {
+  font-size: 26px;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-#category-menu i {
-  position: absolute;
-  font-size: 16px;
-  top: 15px;
-  right: 15px;
+@media (min-width: 768px) {
+  .catchcopy p {
+    text-align: center;
+  }
 }
 
-#category-menu a, #category-menu a:visited {
-  color: #202020;
+/* -------------------------------------
+howto
+------------------------------------- */
+.howto li {
+  line-height: 2em;
 }
 
-.category-banner div {
-  margin: 30px auto;
+/* -------------------------------------
+lineup
+------------------------------------- */
+.lineup .row>div {
+  margin-bottom: 15px;
 }
 
-.category-banner span {
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #548859;
+.lineup img {
+  margin-bottom: 15px;
 }
 
-.category-banner h3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.category-banner p {
-  line-height: 26px;
+.lineup img+p {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* -------------------------------------
@@ -96,35 +108,6 @@ whats-niimo
 #whats-niimo p {
   font-size: 16px;
   line-height: 28px;
-}
-
-/* -------------------------------------
-shopping-flow
-------------------------------------- */
-#shopping-flow {
-  text-align: center;
-}
-
-#shopping-flow h2 {
-  margin-bottom: 30px;
-}
-
-#shopping-flow p {
-  margin: 8px 0;
-  font-size: 16px;
-  line-height: 36px;
-  background-color: #F8F8F8;
-}
-@media (min-width: 768px) {
-  #shopping-flow p {
-    line-height: 60px;
-  }
-}
-
-#shopping-flow i {
-  color: #548859;
-  font-size: 30px;
-  line-height: 10px;
 }
 
 /* -------------------------------------
@@ -178,78 +161,27 @@ corner-card
 }
 
 /* -------------------------------------
-footer
+about-stick
 ------------------------------------- */
-footer {
-    margin-top: 40px;
-    font-size: 18px;
+.about-stick .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
 
-footer a {
-    text-decoration: none;
-    color: inherit;
+.about-stick p {
+  margin-top: 30px;
+  line-height: 1.8em;
+  text-indent: 1em;
 }
 
-footer a:hover {
-    text-decoration: none;
+.about-stick li {
+  line-height: 1.8em;
 }
 
-.contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-image: url(../img/sp/footer.jpg);
-  background-repeat: repeat;
-  background-size: calc(400px/2) calc(373px/2) ;
-  text-align: center;
-}
-
-.contact .whitebox {
-    padding: 10px 0;
-    max-width: 320px;
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.contact h3 {
-    font-size: 14px;
-}
-@media (min-width: 768px) {
-  .contact h3 {
-    font-weight: bold;
-  }
-}
-
-.contact p {
-  font-size: 16px;
-}
-
-.contact small {
-    font-size: 10px;
-}
-
-.contact i {
-    margin-right: 15px;
-}
-
-.contact button {
-  background-color: #548859;
-  border: none;
-  padding: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.copyright {
-    font-size: 12px;
-    text-align: center;
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #548859;
-    color: white;
-}
-
-.copyright p {
-  margin: 0;
+.about-stick span {
+  padding: 10px;
+  background-color: #b28224;
+  font-size: 10px;
+  color: white;
+  letter-spacing: 2px;
 }

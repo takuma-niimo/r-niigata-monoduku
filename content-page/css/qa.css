@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* -------------------------------------
+qa-list
+------------------------------------- */
+.qa-list {
+  padding: 0;
+}
+
+.qa-list button {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  color: inherit;
+  font-size: 16px;
+  text-align: left;
+  line-height: 60px;
+  background-color: inherit;
+  padding: 0;
+}
+
+.qa-list button:hover {
+  color: inherit;
+  outline: none;
+}
+
+.qa-list .panel-default {
+  border: none;
+}
+
+.qa-list h3 {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.qa-list h3+p,
+.qa-list h3+div {
+  padding: 15px;
+  background-color: #f3f3f3;
+  line-height: 1.7em;
+  text-indent: 1em;
+}
+
+/* -------------------------------------
+qa-list; toggle animation
+------------------------------------- */
+.qa-list section {
+  position: relative;
+}
+
+.qa-list section>i {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  transition: all .5s ease 0s;
+}
+
+.qa-list .in~i {
+  transform: rotate(180deg);
+}
+
+/* -------------------------------------
+cta-button
+------------------------------------- */
+.cta-button button {
+  padding: 15px 15px;
+  background-color: #b28224;
+  border: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta-button button:hover {
+  background-color: #b28224;
+  border: none;
+}
+
+.cta-button i {
+  margin-right: 10px;
+}

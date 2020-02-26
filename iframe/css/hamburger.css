@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* -------------------------------------
+check button
+------------------------------------- */
+#navcheck {
+  display: none;
+}
+
+/* -------------------------------------
+sp navigation drawer
+ - style in rakuten product page
+------------------------------------- */
+.sp-drawer {
+  position: fixed;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  width: 70vw;
+  height: 100vh;
+  top: 0;
+  left: -70vw;
+  z-index: 10000;
+  transition: all .4s ease;
+}
+
+.sp-drawer>iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#navcheck:checked~.sp-drawer {
+  left: 0;
+}
+
+/* -------------------------------------
+close button [x]
+------------------------------------- */
+.close-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50px;
+  left: calc(70vw + 15px);
+  z-index: 9999;
+}
+
+#navcheck:checked~.close-btn {
+  display: block;
+}
+
+.close-btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  z-index: 9999;
+}
+
+.close-btn span:first-child {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+.close-btn span:last-child {
+  transform: translate(0, -10px) rotate(-45deg);
+}
+
+.close-btn::after {
+  display: none;
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+}
+
+#navcheck:checked~.close-btn::after {
+  display: block;
+}
+
+/* -------------------------------------
+sp navigation bar(optional)
+------------------------------------- */
+.sp-navbar {
+  position: absolute;
+  height: 60px;
+  top: 150px;
+  left: 0;
+  right: 0;
+}
+
+/* -------------------------------------
+hamburger button
+ - three lines and 'menu' text
+------------------------------------- */
+.ham-btn {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  z-index: 9999;
+  width: 36px;
+  height: 38px;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.ham-btn span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 22px;
+  left: 6px;
+  background-color: #4a4a4a;
+}
+
+.ham-btn span:first-child {
+  top: 6px;
+}
+
+.ham-btn span:nth-child(2) {
+  top: 13px;
+}
+
+.ham-btn span:nth-child(3) {
+  top: 20px;
+}
+
+.ham-btn span:last-child {
+  width: 36px;
+  left: 0;
+  background-color: transparent;
+  text-align: center;
+  font-size: 10px;
+  top: 22px;
+}

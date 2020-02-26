@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* -------------------------------------
+icons
+------------------------------------- */
+.icons {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.icons .gray-circle {
+  border-radius: 50%;
+  background-color: #eaeaea;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.icons .dummy {
+  background-color: transparent;
+}
+
+.icons .gray-circle img {
+  display: block;
+  width: 45%;
+  padding-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons .gray-circle p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 992px) {
+  .icons .gray-circle p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+/* -------------------------------------
+hello
+------------------------------------- */
+.hello {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hello p {
+  line-height: 1.8em;
+  text-indent: 1em;
+}
+
+.hello p a {
+  font-weight: bold;
+}
+
+/* -------------------------------------
+howto
+------------------------------------- */
+.howto h3 {
+  padding-left: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  line-height: 1.6em;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.howto img {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.howto h3 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.howto .visible-xs img {
+  max-width: 400px;
+}
+
+.howto .visible-xs p {
+  text-indent: 1em;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+
+.howto .hidden-xs {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.howto .hidden-xs p {
+  line-height: 2em;
+  text-indent: 1em;
+}
+
+.howto .hidden-xs>div {
+  overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.howto .hidden-xs .pull-left {
+  width: 340px;
+}
+
+.howto .hidden-xs .pull-right {
+  width: calc(100% - 340px - 50px);
+}
+
+.howto .hidden-xs .pull-left p {
+  margin-bottom: 60px;
+}
+
+/* -------------------------------------
+shopping-flow
+------------------------------------- */
+#shopping-flow p {
+  background-color: #f1f1f1;
+  line-height: 54px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
