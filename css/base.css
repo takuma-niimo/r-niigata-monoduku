@@ -207,7 +207,7 @@ other-shop
   margin-right: auto;
 }
 
-.other-shop img+p {
+.other-shop p {
   text-align: center;
   font-weight: bold;
 }
