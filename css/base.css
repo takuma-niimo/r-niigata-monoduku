@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 .content-wrap .breadcrumb {
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 0;
 }
 
 .content-wrap img, footer img {
