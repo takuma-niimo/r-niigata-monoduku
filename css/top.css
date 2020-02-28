@@ -86,6 +86,10 @@ lineup
   font-weight: bold;
 }
 
+.lineup a {
+  color: inherit;
+}
+
 /* -------------------------------------
 whats-niimo
 ------------------------------------- */

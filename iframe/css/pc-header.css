@@ -1,0 +1,147 @@
+body {
+  padding: 0; margin: 0;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium",
+    YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+img { width: 100%; }
+a { color: #222; text-decoration: none;}
+
+.header {
+  width: 1200px;
+  margin: -50px auto 0;
+}
+
+.header>div {
+  width: calc(1200px / 5);
+  display: inline-block;
+}
+
+.header .double img {
+  width: 50%;
+}
+
+.box-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.other-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  float: right;
+}
+
+.other-nav li {
+  position: relative;
+  margin-left: 16px;
+  line-break: strict;
+}
+
+.pnav {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+._header-nav {
+  overflow: hidden;
+  height: 60px;
+}
+
+._right {
+  text-align: right;
+}
+
+.button-cart {
+  width: 100px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.to-rakuten {
+  width: 80px;
+}
+
+.upper-right>* {
+  display: inline-block;
+}
+
+.news {
+  font-size: 110%;
+  width: 1200px;
+  height: 150px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+}
+
+.news h2 {
+  margin: 0;
+  font-size: 22px;
+  text-align: left;
+}
+
+.news p {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.news small {
+  display: block;
+  padding-left: 20px;
+}
+
+.news strong {
+  color: red;
+}
+
+.banners {
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banners .mizunara3 {
+  height: 215px;
+  width: 49%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  width: 200px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.search {
+  border: 1px solid lightgray;
+}
+
+.search input[type="text"] {
+  width: 150px;
+  padding: 15px 0 14px 4px;
+  border: none;
+  display: inline-block;
+}
+
+.search input[type="submit"] {
+  font-size: 14px;
+  border: none;
+  padding: 15px;
+  color: white;
+  background-color: orange;
+}
