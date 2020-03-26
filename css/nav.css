@@ -40,6 +40,7 @@ navigation
 }
 
 .pc-header {
+  overflow-y: hidden;
   height: 120px;
   width: 100%;
 }
@@ -109,7 +110,7 @@ keyvisual sp
   top: 300px;
   font-size: 26px;
   text-align: center;
-  font-family: serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-weight: bold;
   width: 100%;
   color: black;
@@ -137,7 +138,7 @@ keyvisual pc
   font-size: 32px;
   text-shadow: 1px 1px 1px black;
   line-height: 1.8em;
-  font-family: serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .searchbox input[type="text"] {
